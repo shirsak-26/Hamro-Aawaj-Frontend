@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>Manage Categories | Admin</title>
+  </head>
+  <body class="admin-shell">
+    <div class="admin-layout">
+      <aside class="sidebar">
+        <a class="admin-brand" href="dashboard.html"
+          ><span class="brand-mark">🤟</span>Hamro Aawaj</a
+        >
+        <nav class="admin-nav">
+          <a class="active" href="dashboard.html">📊 Dashboard</a
+          ><a href="users.html">👥 Manage Users</a
+          ><a href="categories.html">📂 Categories</a
+          ><a href="lessons.html">📚 Lessons</a
+          ><a href="images.html">🖼️ Images</a><a href="videos.html">🎥 Videos</a
+          ><a href="quizzes.html">📝 Quizzes</a
+          ><a href="feedback.html">💬 Feedback</a
+          ><a href="messages.html">✉️ Contact Messages</a
+          ><a href="profile.html">👤 Admin Profile</a
+          ><a href="login.html">🚪 Logout</a>
+        </nav>
+      </aside>
+      <main class="admin-main">
+        <div class="admin-top">
+          <div>
+            <h1>Manage Categories</h1>
+            <p style="color: var(--muted)">
+              Create and organize NSL learning topics.
+            </p>
+          </div>
+          <button
+            class="btn btn-primary"
+            onclick="
+              alert('Frontend demo: category form can be connected later.')
+            "
+          >
+            + Add Category
+          </button>
+        </div>
+        <div class="admin-card">
+          <div class="table-wrap">
+            <table class="table">
+              <tr>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Lessons</th>
+                <th>Action</th>
+              </tr>
+              <tr>
+                <td>Greetings</td>
+                <td>Basic expressions</td>
+                <td>4</td>
+                <td>
+                  <button class="action edit">Edit</button>
+                  <button class="action delete">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Alphabet</td>
+                <td>Nepali manual alphabet</td>
+                <td>3</td>
+                <td>
+                  <button class="action edit">Edit</button>
+                  <button class="action delete">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Family</td>
+                <td>Family relationships</td>
+                <td>5</td>
+                <td>
+                  <button class="action edit">Edit</button>
+                  <button class="action delete">Delete</button>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

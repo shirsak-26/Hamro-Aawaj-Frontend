@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>Manage Images | Admin</title>
+  </head>
+  <body class="admin-shell">
+    <div class="admin-layout">
+      <aside class="sidebar">
+        <a class="admin-brand" href="dashboard.html"
+          ><span class="brand-mark">🤟</span>Hamro Aawaj</a
+        >
+        <nav class="admin-nav">
+          <a class="active" href="dashboard.html">📊 Dashboard</a
+          ><a href="users.html">👥 Manage Users</a
+          ><a href="categories.html">📂 Categories</a
+          ><a href="lessons.html">📚 Lessons</a
+          ><a href="images.html">🖼️ Images</a><a href="videos.html">🎥 Videos</a
+          ><a href="quizzes.html">📝 Quizzes</a
+          ><a href="feedback.html">💬 Feedback</a
+          ><a href="messages.html">✉️ Contact Messages</a
+          ><a href="profile.html">👤 Admin Profile</a
+          ><a href="login.html">🚪 Logout</a>
+        </nav>
+      </aside>
+      <main class="admin-main">
+        <div class="admin-top">
+          <div>
+            <h1>Manage Images</h1>
+            <p style="color: var(--muted)">
+              Upload and organize NSL sign images.
+            </p>
+          </div>
+        </div>
+        <div class="admin-card">
+          <div class="upload-box">
+            <div style="font-size: 45px">🖼️</div>
+            <h3>Upload an NSL image</h3>
+            <p style="color: var(--muted)">
+              Frontend upload area — connect it to your backend later.
+            </p>
+            <input type="file" accept="image/*" />
+            <div style="margin-top: 15px">
+              <button
+                class="btn btn-primary"
+                onclick="
+                  alert(
+                    'Frontend demo: image upload is ready for backend connection.',
+                  )
+                "
+              >
+                Upload image
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="content-grid">
+          <div class="card">
+            <div class="lesson-thumb">👋</div>
+            <h3>Hello</h3>
+            <p>greetings/hello.png</p>
+            <button class="action edit">Edit</button>
+            <button class="action delete">Delete</button>
+          </div>
+          <div class="card">
+            <div class="lesson-thumb">🙏</div>
+            <h3>Thank you</h3>
+            <p>expressions/thanks.png</p>
+            <button class="action edit">Edit</button>
+            <button class="action delete">Delete</button>
+          </div>
+          <div class="card">
+            <div class="lesson-thumb">🏠</div>
+            <h3>Home</h3>
+            <p>places/home.png</p>
+            <button class="action edit">Edit</button>
+            <button class="action delete">Delete</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

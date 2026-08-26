@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>Manage Lessons | Admin</title>
+  </head>
+  <body class="admin-shell">
+    <div class="admin-layout">
+      <aside class="sidebar">
+        <a class="admin-brand" href="dashboard.html"
+          ><span class="brand-mark">🤟</span>Hamro Aawaj</a
+        >
+        <nav class="admin-nav">
+          <a class="active" href="dashboard.html">📊 Dashboard</a
+          ><a href="users.html">👥 Manage Users</a
+          ><a href="categories.html">📂 Categories</a
+          ><a href="lessons.html">📚 Lessons</a
+          ><a href="images.html">🖼️ Images</a><a href="videos.html">🎥 Videos</a
+          ><a href="quizzes.html">📝 Quizzes</a
+          ><a href="feedback.html">💬 Feedback</a
+          ><a href="messages.html">✉️ Contact Messages</a
+          ><a href="profile.html">👤 Admin Profile</a
+          ><a href="login.html">🚪 Logout</a>
+        </nav>
+      </aside>
+      <main class="admin-main">
+        <div class="admin-top">
+          <div>
+            <h1>Manage Lessons</h1>
+            <p style="color: var(--muted)">Add, edit and organize lessons.</p>
+          </div>
+          <button
+            class="btn btn-primary"
+            onclick="
+              document.getElementById('lessonForm').classList.toggle('hidden')
+            "
+          >
+            + Add Lesson
+          </button>
+        </div>
+        <div id="lessonForm" class="admin-card hidden">
+          <h2>Add lesson</h2>
+          <div class="admin-form-grid">
+            <div class="field">
+              <label>Lesson title</label><input placeholder="Basic Greetings" />
+            </div>
+            <div class="field">
+              <label>Category</label
+              ><select>
+                <option>Greetings</option>
+                <option>Alphabet</option>
+                <option>Family</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label>Description</label><textarea rows="4"></textarea>
+          </div>
+          <button class="btn btn-primary">Save lesson</button>
+        </div>
+        <div class="admin-card">
+          <table class="table">
+            <tr>
+              <th>Lesson</th>
+              <th>Category</th>
+              <th>Level</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+            <tr>
+              <td>Basic Greetings</td>
+              <td>Greetings</td>
+              <td>Beginner</td>
+              <td>Published</td>
+              <td>
+                <button class="action edit">Edit</button>
+                <button class="action delete">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Nepali Alphabet</td>
+              <td>Alphabet</td>
+              <td>Beginner</td>
+              <td>Published</td>
+              <td>
+                <button class="action edit">Edit</button>
+                <button class="action delete">Delete</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

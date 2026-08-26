@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>Manage Videos | Admin</title>
+  </head>
+  <body class="admin-shell">
+    <div class="admin-layout">
+      <aside class="sidebar">
+        <a class="admin-brand" href="dashboard.html"
+          ><span class="brand-mark">🤟</span>Hamro Aawaj</a
+        >
+        <nav class="admin-nav">
+          <a class="active" href="dashboard.html">📊 Dashboard</a
+          ><a href="users.html">👥 Manage Users</a
+          ><a href="categories.html">📂 Categories</a
+          ><a href="lessons.html">📚 Lessons</a
+          ><a href="images.html">🖼️ Images</a><a href="videos.html">🎥 Videos</a
+          ><a href="quizzes.html">📝 Quizzes</a
+          ><a href="feedback.html">💬 Feedback</a
+          ><a href="messages.html">✉️ Contact Messages</a
+          ><a href="profile.html">👤 Admin Profile</a
+          ><a href="login.html">🚪 Logout</a>
+        </nav>
+      </aside>
+      <main class="admin-main">
+        <div class="admin-top">
+          <div>
+            <h1>Manage Videos</h1>
+            <p style="color: var(--muted)">
+              Add and manage sign demonstration videos.
+            </p>
+          </div>
+          <button
+            class="btn btn-primary"
+            onclick="
+              document.getElementById('videoForm').classList.toggle('hidden')
+            "
+          >
+            + Add Video
+          </button>
+        </div>
+        <div id="videoForm" class="admin-card hidden">
+          <div class="admin-form-grid">
+            <div class="field">
+              <label>Video title</label
+              ><input placeholder="Hello sign demonstration" />
+            </div>
+            <div class="field">
+              <label>Category</label
+              ><select>
+                <option>Greetings</option>
+                <option>Family</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label>Video file</label><input type="file" accept="video/*" />
+          </div>
+          <button class="btn btn-primary">Save video</button>
+        </div>
+        <div class="admin-card">
+          <table class="table">
+            <tr>
+              <th>Video</th>
+              <th>Category</th>
+              <th>Duration</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+            <tr>
+              <td>Hello sign demonstration</td>
+              <td>Greetings</td>
+              <td>00:28</td>
+              <td>Published</td>
+              <td>
+                <button class="action edit">Edit</button>
+                <button class="action delete">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Thank you sign</td>
+              <td>Expressions</td>
+              <td>00:31</td>
+              <td>Published</td>
+              <td>
+                <button class="action edit">Edit</button>
+                <button class="action delete">Delete</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

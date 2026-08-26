@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>Manage Quizzes | Admin</title>
+  </head>
+  <body class="admin-shell">
+    <div class="admin-layout">
+      <aside class="sidebar">
+        <a class="admin-brand" href="dashboard.html"
+          ><span class="brand-mark">🤟</span>Hamro Aawaj</a
+        >
+        <nav class="admin-nav">
+          <a class="active" href="dashboard.html">📊 Dashboard</a
+          ><a href="users.html">👥 Manage Users</a
+          ><a href="categories.html">📂 Categories</a
+          ><a href="lessons.html">📚 Lessons</a
+          ><a href="images.html">🖼️ Images</a><a href="videos.html">🎥 Videos</a
+          ><a href="quizzes.html">📝 Quizzes</a
+          ><a href="feedback.html">💬 Feedback</a
+          ><a href="messages.html">✉️ Contact Messages</a
+          ><a href="profile.html">👤 Admin Profile</a
+          ><a href="login.html">🚪 Logout</a>
+        </nav>
+      </aside>
+      <main class="admin-main">
+        <div class="admin-top">
+          <div>
+            <h1>Manage Quizzes</h1>
+            <p style="color: var(--muted)">
+              Create quizzes and manage questions.
+            </p>
+          </div>
+          <button
+            class="btn btn-primary"
+            onclick="
+              document.getElementById('quizForm').classList.toggle('hidden')
+            "
+          >
+            + Create Quiz
+          </button>
+        </div>
+        <div id="quizForm" class="admin-card hidden">
+          <div class="admin-form-grid">
+            <div class="field">
+              <label>Quiz title</label
+              ><input placeholder="Basic Greetings Quiz" />
+            </div>
+            <div class="field">
+              <label>Related lesson</label
+              ><select>
+                <option>Basic Greetings</option>
+                <option>Family</option>
+              </select>
+            </div>
+          </div>
+          <button class="btn btn-primary">Create quiz</button>
+        </div>
+        <div class="admin-card">
+          <table class="table">
+            <tr>
+              <th>Quiz</th>
+              <th>Lesson</th>
+              <th>Questions</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+            <tr>
+              <td>Basic Greetings Quiz</td>
+              <td>Basic Greetings</td>
+              <td>10</td>
+              <td>Published</td>
+              <td><button class="action edit">Manage</button></td>
+            </tr>
+            <tr>
+              <td>Alphabet Quiz</td>
+              <td>Nepali Alphabet</td>
+              <td>15</td>
+              <td>Published</td>
+              <td><button class="action edit">Manage</button></td>
+            </tr>
+          </table>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
