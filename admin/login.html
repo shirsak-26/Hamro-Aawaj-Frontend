@@ -13,13 +13,24 @@
         <p style="color: var(--muted)">Administrator Panel</p>
         <h1>Admin Login</h1>
         <p class="sub">Frontend preview of the administrator sign-in page.</p>
-        <form data-demo-form>
+        <form id="adminLoginForm">
           <div class="field">
-            <label>Username</label><input required placeholder="admin" />
+            <label>Email</label>
+            <input
+              id="adminEmail"
+              type="email"
+              required
+              placeholder="admin@example.com"
+            />
           </div>
           <div class="field">
             <label>Password</label
-            ><input type="password" required placeholder="••••••••" />
+            ><input
+              id="adminPassword"
+              type="password"
+              required
+              placeholder="••••••••"
+            />
           </div>
           <button class="btn btn-primary" style="width: 100%">Sign in</button>
           <div
@@ -31,5 +42,6 @@
       </div>
     </main>
     <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/admin.js"></script>
   </body>
 </html>

@@ -4,7 +4,9 @@
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Hamro Aawaj - Nepali Sign Language learning platform"><link rel="stylesheet" href="assets/css/style.css"><title>Lessons | Hamro Aawaj</title>
 </head>
 
-<body><nav class="topbar"><div class="container nav"><a class="brand" href="index.html"><span class="brand-mark">🤟</span>Hamro Aawaj</a><button class="menu-btn" aria-label="Open menu">☰</button><div class="navlinks"><a href="index.html">Home</a><a href="lessons.html">Learn NSL</a><a href="dictionary.html">Dictionary</a><a href="quizzes.html">Quizzes</a><a href="about.html">About</a></div><div class="nav-actions"><a class="btn btn-outline" href="login.html">Log in</a><a class="btn btn-primary" href="register.html">Register</a></div></div></nav><section class="page-hero">
+<body><nav class="topbar"><div class="container nav"><a class="brand" href="index.html"><span class="brand-mark">🤟</span>Hamro Aawaj</a><button class="menu-btn" aria-label="Open menu">☰</button><div class="navlinks"><a href="index.html">Home</a><a href="lessons.html">Learn NSL</a><a href="dictionary.html">Dictionary</a><a href="quizzes.html">Quizzes</a><a href="about.html">About</a></div><div class="nav-actions">
+    <button class="btn btn-outline" onclick="logout()">Log out</button>
+</div></div></nav><section class="page-hero">
         <div class="container">
             <h1>Learn Nepali Sign Language</h1>
             <p>Choose a topic and learn signs step by step.</p>
@@ -12,53 +14,20 @@
     </section>
     <section class="section">
         <div class="container">
-            <div class="dictionary-search"><input data-search placeholder="Search lessons, e.g. greetings, family..."><a class="btn btn-primary" href="lesson-details.html">Open lesson</a></div>
-            <div class="content-grid">
-                <div class="card lesson-card" data-search-item>
-                    <div class="lesson-thumb">👋</div>
-                    <div class="lesson-body"><span class="tag">Beginner</span>
-                        <h3>Basic Greetings</h3>
-                        <p>Learn common greetings and polite expressions.</p><br><a class="btn btn-light" href="lesson-details.html">View lesson</a>
-                    </div>
-                </div>
-                <div class="card lesson-card" data-search-item>
-                    <div class="lesson-thumb">🔤</div>
-                    <div class="lesson-body"><span class="tag">Beginner</span>
-                        <h3>Nepali Alphabet</h3>
-                        <p>Explore fingerspelling and alphabet signs.</p><br><a class="btn btn-light" href="lesson-details.html">View lesson</a>
-                    </div>
-                </div>
-                <div class="card lesson-card" data-search-item>
-                    <div class="lesson-thumb">👨‍👩‍👧</div>
-                    <div class="lesson-body"><span class="tag">Beginner</span>
-                        <h3>Family</h3>
-                        <p>Learn signs for common family relationships.</p><br><a class="btn btn-light" href="lesson-details.html">View lesson</a>
-                    </div>
-                </div>
-                <div class="card lesson-card" data-search-item>
-                    <div class="lesson-thumb">🔢</div>
-                    <div class="lesson-body"><span class="tag">Beginner</span>
-                        <h3>Numbers</h3>
-                        <p>Practice numbers and everyday counting.</p><br><a class="btn btn-light" href="lesson-details.html">View lesson</a>
-                    </div>
-                </div>
-                <div class="card lesson-card" data-search-item>
-                    <div class="lesson-thumb">🍚</div>
-                    <div class="lesson-body"><span class="tag">Intermediate</span>
-                        <h3>Food & Drinks</h3>
-                        <p>Build vocabulary for everyday food and drinks.</p><br><a class="btn btn-light" href="lesson-details.html">View lesson</a>
-                    </div>
-                </div>
-                <div class="card lesson-card" data-search-item>
-                    <div class="lesson-thumb">🏫</div>
-                    <div class="lesson-body"><span class="tag">Intermediate</span>
-                        <h3>School</h3>
-                        <p>Learn signs related to school and learning.</p><br><a class="btn btn-light" href="lesson-details.html">View lesson</a>
-                    </div>
-                </div>
+            <div class="dictionary-search">
+                <input
+    data-search
+    placeholder="Search lessons, e.g. greetings, family..."><a class="btn btn-primary" href="lesson-details.html">Open lesson</a></div>
+            <div id="lessonsContainer" class="content-grid">
+    <p>Loading lessons...</p>
+</div>
             </div>
         </div>
     </section><footer class="footer"><div class="container"><div class="footer-grid"><div><div class="brand" style="color:#fff"><span class="brand-mark">🤟</span>Hamro Aawaj</div><p>Making Nepali Sign Language learning visual, welcoming and accessible for everyone.</p></div><div><h4>Learn</h4><a href="lessons.html">Lessons</a><a href="dictionary.html">NSL Dictionary</a><a href="quizzes.html">Quizzes</a><a href="progress.html">My Progress</a></div><div><h4>Company</h4><a href="about.html">About</a><a href="feedback.html">Feedback</a><a href="contact.html">Contact</a></div><div><h4>Legal</h4><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a></div></div><div class="copyright"><span>© 2026 Hamro Aawaj. All rights reserved.</span><span>Designed for Nepali Sign Language learning.</span></div></div></footer><script src="assets/js/script.js"></script>
+<script src="assets/js/auth.js"></script>
+<script>
+    requireLogin();
+</script>
+    <script src="assets/js/studentLessons.js"></script>
 </body>
-
 </html>
